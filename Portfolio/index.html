@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d64429f02e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Siddharth</span> <br> Kumar Jha</h1>
+        </div>
+    </div>
+</div>
+<!--------------------about------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user3.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Siddharth Kumar Jha, a 3rd-year B.Tech student at NMIT College, pursuing Information Science and Engineering. I am deeply passionate about technology, innovation, and solving real-world problems. With a strong focus on learning and growth, I am dedicated to honing my skills and making meaningful contributions in the tech industry.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick = "opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick = "opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick = "opentab('education')">Education</p>
+                    <p class="tab-links"onclick = "opentab('project')">Project</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Artificial Intelligence</span><br>Intelligent System Development.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br> Indo-Skills</li>                
+                        <li><span>2025</span><br>Attended National Lavel Hackathon</li>
+                    </ul>
+                </div>    
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2020</span><br>Did my Class 10th from I.H.S.Tabhaka</li>
+                        <li><span>2020-2022</span><br>Did my class 12th from B.R.N.K.S.College Kalyanpur</li>
+                        <li><span>2022-Current</span><br>Doing my btech in Information Science and Engineering from NMIT Bangalore</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="project">
+                    <ul>
+                        <li><span>2022</span><br>Human Face Detection</li>
+                        <li><span>2023</span><br>Excel Project</li>
+                        <li><span>2024</span><br>Unity & Some AI projects</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-------------------------services------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>As a web developer, the role extends beyond web design to include building and maintaining functional, efficient, and scalable websites. It involves coding, debugging, optimizing performance, and ensuring seamless integration of interactive elements for an excellent user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>UI/UX design focuses on creating intuitive, engaging, and visually appealing interfaces while enhancing user experience through thoughtful design, usability, accessibility, and seamless interactions across digital platforms and applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Artificial Intelligence</h2>
+                <p>AI involves designing intelligent systems that simulate human thinking, learning, and problem-solving. It includes developing algorithms, models, and applications for tasks like decision-making, automation, natural language processing, and computer vision.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------portfolio------------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="C88IZyEo7g-1.webp" alt="work-1">
+                <div class="layer">
+                    <h3>Quiz Application</h3>
+                    <p>🎓 Quiz Application - A multi-portal quiz system with separate access for Admin, Faculty, and Students. The application allows faculty to create questions, students to take quizzes, and the admin to view results and download marks cards. Built using PHP, HTML, CSS, JavaScript, and MySQL. 🚀 Features - Admin Portal , Register students and faculty. View student quiz results. Download marks cards in PDF format. Faculty Portal : Create and manage quiz questions. Student Portal : Log in and take quizzes.
+
+View quiz results after completion.</p>
+                    <a href="https://sidjha0000.github.io/MindSprint/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="bg3.png" alt="work-2">
+                <div class="layer">
+                    <h3>Awaaz360</h3>
+                    <p>Awaaz360 is a digital platform designed to empower rural citizens by allowing them to anonymously report illegal or harmful activities—such as crop burning, garbage mismanagement, or water contamination—directly to local authorities.</p>
+                    <a href="https://sidjha0000.github.io/awaaz360/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="logo.webp" alt="work-3">
+                <div class="layer">
+                    <h3>EcoGenius</h3>
+                    <p>EcoGenius is an AI-powered environmental assistant designed to guide you towards a greener lifestyle. With real-time insights into air quality, access to nearby recycling centers, eco-friendly stores, and sustainable transport options, EcoGenius empowers you to make eco-conscious choices every day. Whether you're just starting your sustainability journey or looking to track and improve your impact, EcoGenius is here to help — one smart decision at a time. Let’s build a cleaner, healthier future together!</p>
+                    <a href="https://sidjha0000.github.io/EcoGenius/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!------------------contact------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-square-envelope"></i>siddharthjha140804@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9801004703</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/siddharth.jha.75685962?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/siddharth._.jha__14/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/siddharth-kumar-jha-746a6227b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sidjha0000"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="my-cv.pdf" download class = "btn btn2" >Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Made by  <i class="fa-solid fa-heart"></i> SIDDHARTH JHA</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(var tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(var tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyNSZgV8coO6_I_NZ80f5jVg0uhgHHu8zr6cvG555RiivIAi1KW4fwFAwvv4HRcyLfn/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+                 
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+    
+  </script>
+</body>
+</html>
