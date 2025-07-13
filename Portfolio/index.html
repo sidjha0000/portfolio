@@ -199,24 +199,36 @@ View quiz results after completion.</p>
     }
 </script>
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyNSZgV8coO6_I_NZ80f5jVg0uhgHHu8zr6cvG555RiivIAi1KW4fwFAwvv4HRcyLfn/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-                 
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-
-    
-  </script>
+    document.forms['submit-to-google-sheet'].addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        emailjs.send("service_1hxalzg", "template_w9ddshm", {
+            name: formData.get('Name'),
+            email: formData.get('Email'),
+            message: formData.get('Message')
+        }).then(
+            function() {
+                document.getElementById("msg").innerHTML = "Message sent successfully";
+                setTimeout(function(){
+                    document.getElementById("msg").innerHTML = "";
+                },5000);
+                document.forms['submit-to-google-sheet'].reset();
+            },
+            function(error) {
+                document.getElementById("msg").innerHTML = "Failed to send message";
+                console.error("Failed to send email:", error);
+            }
+        );
+    });
+</script>
+</body>
+</html>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("agVvtFHkU9_r-nRVc"); // Replace with your EmailJS public key
+  })();
+</script>
 </body>
 </html>
